@@ -18,6 +18,23 @@ class TestController extends AbstractController
     }
 
     /**
+     * @Route("/test/detail", name="test_detail")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function detail()
+    {
+        return $this->render('test/detail.html.twig', [
+            'controller_name' => 'TestController',
+            'user' => [
+                'username' => 'anrdejmaly',
+                'password' => 'velicesložitéheslo',
+                'name' => 'Andrej Malý',
+                'age' => 20
+            ]
+        ]);
+    }
+
+    /**
      * @Route("/test/{name}", name="test_hello")
      * @param $name
      * @return \Symfony\Component\HttpFoundation\Response
