@@ -11,6 +11,13 @@
     <div class="example-wrapper">
         <h1>Hello {{ controller_name }}! ✅</h1>
 
+        <p>
+            <a href="{{ path('test') }}">index</a>
+            <a href="{{ path('test_detail') }}">detail</a>
+            <a href="{{ path('test_hello', {'name': 'master'}) }}">master</a>
+            <a href="{{ path('test_hello', {'name': 'slave'}) }}">slave</a>
+        </p>
+
         <table>
             <tr>
                 <th>Username:</th>
