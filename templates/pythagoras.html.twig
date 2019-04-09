@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+        <div class="media">
+        <img class="mr-6" src="https://u.smedata.sk/blogidnes/article/9/42/422509/422509_clanok_foto_254.jpg?r=27bq" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Výsledek obrázku pro pythagoras obrázek" style="margin-top: 51px;" data-iml="1551212340611" width="167" height="252">
+        <div class="media-body">
+            <br>
+            <br>
+            <h2 class="col-md-6">Pythagoras</h2>
+            <br>
+            <p>Pythagoras ze Samu byl řecký filosof, matematik, astronom i kněz. Narodil na ostrově Samos.</p>
+            <p>V mládí cestoval po Egyptě a Babylonii, kde se seznámil s východními náboženskými myšlenkami.</p>
+            <p>Založil dva stupně škol, v Egyptě a kolem roku 530 př. n. l. v Krotónu v Itálii pythagorejskou školu.</p>
+            <p>Jeho žáci mu připisovali objev vztahu mezi obsahy čtverců u stran pravoúhlého trojúhelníka,</p>
+            <p>dnes vztah známý jako Pythagorova věta.</p>
+            <br>
+            <br>
+            <div class="media mt-3">
+                <a class="mr-6" href="#">
+                    <img src="https://matematika.cz/content/images/obd1.png" class="mr-3" alt="Obrázek obdélník">
+                </a>
+                <div class="media-body">
+                    <h3 class="mt-0">Obdélník</h3>
+
+                    <p> a = 4 cm </p>
+                    <p> b = 5 cm </p>
+                    <p> S = ab </p>
+                    <p> O = 2a + 2b </p>
+                    <p> Obsah obdélníku o stranách 4 cm a 5 cm je 20 cm². </p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="media mt-3">
+                <a class="mr-6" href="#">
+                    <img alt="VlastnostiRovnostrannehoTrojuhelnika.jpg" src="//upload.wikimedia.org/wikipedia/commons/1/1a/VlastnostiRovnostrannehoTrojuhelnika.jpg" decoding="async" data-file-width="386" data-file-height="251" width="386" height="251">                      </a>
+                <div class="media-body">
+                    <h3 class="mt-0">Rovnostranný trojúhelník</h3>
+                    <p>a = 6 cm</p>
+                    <p>úhel = 60 stupňů</p>
+                    <p>S = a · v / 2 = a2 · √3  / 4</p>
+                    <p>O = 3a</p>
+                    <p>v = a * sin α</p>
+                    <p> Rovnostranný trojúhelník o straně délky 6 cm a úhlu 60 stupňů je 16 cm².</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block body %}{% endblock %}
+</div>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

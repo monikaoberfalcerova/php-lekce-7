@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Username:</th>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <td>{{ user.password }}</td>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td>{{ user.name }}</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>{{ user.age }}</td>
+        </tr>
+    </table>
+{% endblock %}

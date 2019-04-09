@@ -15,9 +15,12 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     <p>
-        <a href="{{ path('C:\Users\monik\PhpstormProjects\php-lekce-7\templates\test\index.html.twig') }}">index</a>
-        <a href="{{ path('C:\Users\monik\PhpstormProjects\php-lekce-7\templates\test\detail.html.twig') }}">detail</a>
-     </p>
+        <a href="{{ path('test') }}">index</a>
+        <a href="{{ path('test_detail') }}">detail</a>
+        <a href="{{ path('test_hello', {'name': 'master'}) }}">master</a>
+        <a href="{{ path('test_hello', {'name': 'slave'}) }}">slave</a>
+    </p>
+
     {% block body %}{% endblock %}
 </div>
 {% block javascripts %}{% endblock %}
